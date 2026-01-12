@@ -1,0 +1,10 @@
+<h2>Visualize Population</h2>
+<form method="post">
+{% csrf_token %}
+Species: <input type="text" name="species">
+<button type="submit">Show Graph</button>
+</form>
+{% if image_path %}
+<img src="/static/{{ image_path }}" width="500">
+{% endif %}
+

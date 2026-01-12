@@ -1,0 +1,8 @@
+<h2>Wildlife Population Records</h2>
+<table border="1">
+<tr><th>Species</th><th>Year</th><th>Population</th></tr>
+{% for r in data %}
+<tr><td>{{ r.species }}</td><td>{{ r.year }}</td><td>{{ r.population }}</td></tr>
+{% endfor %}
+</table>
+<a href="/add/">Add Data</a> | <a href="/analyze/">Analyze</a> | <a href="/predict/">Predict</a> | <a href="/visualize/">Visualize</a>

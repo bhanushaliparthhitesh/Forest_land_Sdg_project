@@ -1,0 +1,7 @@
+<h2>Analyze Trend</h2>
+<form method="post">
+{% csrf_token %}
+Species: <input type="text" name="species">
+<button type="submit">Analyze</button>
+</form>
+{% if trend %}<h3>Trend: {{ trend }}</h3>{% endif %}

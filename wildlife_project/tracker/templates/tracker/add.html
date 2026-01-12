@@ -1,0 +1,8 @@
+<h2>Add / Update Data</h2>
+<form method="post">
+{% csrf_token %}
+Species: <input type="text" name="species"><br>
+Year: <input type="number" name="year"><br>
+Population: <input type="number" name="population"><br>
+<button type="submit">Save</button>
+</form>
